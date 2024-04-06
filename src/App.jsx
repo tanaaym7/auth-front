@@ -9,14 +9,13 @@ import PrivateRoute from "./components/PrivateRoute";
 import { PersistGate } from "redux-persist/integration/react";
 import { persistor } from "./store";
 function App() {
-
   return (
-     <PersistGate loading={null} persistor={persistor}>
+    <PersistGate loading={null} persistor={persistor}>
       {/* <Home/> */}
       <Navbar />
       <div className="max-w-7xl mx-auto pt-5 px-6">
         <Routes>
-         <Route path="/" element={<PrivateRoute />}>
+          <Route path="/" element={<PrivateRoute />}>
             <Route index element={<Home />}></Route>
           </Route>
           <Route path="/register" element={<Register />}></Route>

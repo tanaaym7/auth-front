@@ -28,7 +28,7 @@ export default function Login() {
       });
 
       dispatch(authActions.login()); // Dispatch the login action
-      navigate("/");
+      navigate("/home");
     } catch (error) {
       if (error.response) {
         toast.error(error.response.data.message);

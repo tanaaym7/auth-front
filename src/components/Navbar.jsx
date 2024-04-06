@@ -23,7 +23,7 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 py-5 backdrop-blur-lg border-b border-neutral-700/80">
       <div className="flex justify-between items-center px-32">
         <Link to="/" className="text-xl text-violet-400 font-bold">
-          Uploader
+          Stream.ai
         </Link>
         <div className="hidden  nav-links lg:flex gap-16 text-lg">
           {!isLoggedIn && (
