@@ -55,10 +55,7 @@ export default function Register() {
             Login
           </Link>
         </p>
-        <form
-          onSubmit={registerUser}
-          className="space-y-5 xl:space-y-5 w-full xl:w-3/4"
-        >
+        <form className="space-y-5 xl:space-y-5 w-full xl:w-3/4">
           <input
             className="w-full bg-[#2f2f2f] text-white rounded-full py-3 px-4"
             type="text"
@@ -88,6 +85,7 @@ export default function Register() {
           />
           <button
             type="submit"
+            onClick={registerUser}
             className="w-full bg-[#ff5b31] text-white rounded-full py-3 px-4"
           >
             Create account
